@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>登录页面</title>
+</head>
+<body>
+<form action="LoginServlet" method="post">
+    <table>
+        <caption>登录页面</caption>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="name"/></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name="password"/></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>身份</td>
+            <td><input type="radio" value="normal" name="role" checked="checked"/>普通用户<input type="radio" value="admin"
+                                                                                             name="role"/>管理员
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>验证码</td>
+            <td><input type="text" name="verify"/></td>
+            <td><img src="CodeServlet" alt="验证码加载失败"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="remember"/>记住我</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="提交"/><input type="reset" value="重置"/></td>
+            <td><a href="#">忘记密码</a></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
